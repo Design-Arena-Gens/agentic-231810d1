@@ -1,0 +1,26 @@
+:root { --bg: #0b1020; --panel: #10162b; --muted: #9fb0d5; --text: #e9eefc; --accent: #7aa2ff; --accent2: #63d6b9; }
+* { box-sizing: border-box }
+html, body { margin: 0; padding: 0; height: 100%; background: var(--bg); color: var(--text); font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, 'Helvetica Neue', Arial }
+.container { max-width: 1000px; margin: 0 auto; padding: 0 16px }
+.siteHeader { position: sticky; top: 0; background: rgba(11,16,32,0.8); backdrop-filter: blur(8px); border-bottom: 1px solid #1d2746; z-index: 10 }
+.siteHeader .brand { color: var(--text); font-weight: 700; text-decoration: none; font-size: 18px }
+.siteHeader .nav a { color: var(--muted); text-decoration: none; margin-left: 14px }
+.siteHeader .nav a:hover { color: var(--text) }
+.siteHeader .container { display: flex; align-items: center; justify-content: space-between; padding: 14px 16px }
+.grid { display: grid; grid-template-columns: repeat(auto-fill,minmax(240px,1fr)); gap: 16px }
+.card { background: linear-gradient(180deg, rgba(122,162,255,0.12), rgba(16,22,43,0.9) 60%); border: 1px solid #1d2746; border-radius: 12px; padding: 18px; text-decoration: none; color: var(--text); transition: transform .15s ease, box-shadow .15s ease }
+.card:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,.25) }
+.card h3 { margin: 0 0 8px; font-size: 18px }
+.card p { margin: 0; color: var(--muted); font-size: 14px; line-height: 1.5 }
+.panel { background: var(--panel); border: 1px solid #1d2746; border-radius: 12px; padding: 16px }
+.row { display: flex; gap: 8px; align-items: center }
+.btn { background: var(--accent); color: #051230; border: none; border-radius: 10px; padding: 10px 14px; font-weight: 600; cursor: pointer }
+.btn.secondary { background: #223058; color: var(--text) }
+.btn.ghost { background: transparent; color: var(--text); border: 1px solid #2a3a6c }
+.input, .select, .textarea { width: 100%; background: #0e1733; color: var(--text); border: 1px solid #223058; border-radius: 10px; padding: 10px 12px }
+.textarea { min-height: 160px }
+.table { width: 100%; border-collapse: collapse }
+.table th, .table td { border-bottom: 1px solid #1d2746; padding: 10px; text-align: left }
+.footer { padding: 24px 16px; color: var(--muted) }
+.badge { display: inline-block; padding: 2px 8px; border-radius: 999px; background: #1a2447; color: var(--accent2); font-size: 12px }
+.small { color: var(--muted); font-size: 13px }

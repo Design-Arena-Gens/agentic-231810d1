@@ -1,0 +1,2 @@
+/* Re-export styles from /styles for app router */
+@import '../styles/globals.css';
